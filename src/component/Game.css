@@ -1,0 +1,45 @@
+.game {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-gap: 20px;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.game-status {
+  font-size: 30px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border: 0;
+  background: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.game-square:hover {
+  background-color: #ddd;
+}
+
+.game-square.is-active {
+  background-color: #ccc;
+}
+
+.is-bold {
+  font-weight: bold;
+}
